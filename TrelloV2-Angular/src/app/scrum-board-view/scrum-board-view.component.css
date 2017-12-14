@@ -1,0 +1,53 @@
+[class*='col-'] {
+    float: left;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+#taskInput{
+  text-decoration-color: transparent;
+}
+#taskInput:hover{
+  cursor: pointer;
+}
+ #userStories:hover {
+    
+    background-color: #EEE;
+    cursor: pointer;
+    color: #607d8b;
+  }
+  #userStories{
+    width:15rem;
+    background:rgb(219, 222, 224);
+  }
+
+  #addLaneBtn{
+    margin-left: 25px;
+  }
+
+  .grid {
+    margin: 0;
+  }
+  
+  
+  .grid-pad {
+    margin-left: 25px;
+    padding: 5px 0;
+  }
+  .grid-pad > [class*='col-']:last-of-type {
+    padding-right: 10px;
+  }
+  .tasks{
+    
+    list-style-type: none;
+  }
+  
+a.delete{
+  
+  float:right; 
+   
+}
+a.delete:hover{
+  cursor: pointer;
+}
+ 

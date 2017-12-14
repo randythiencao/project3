@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+<table class="table table-hover" id="userTable">
+	<thead class="thead-inverse">
+		<tr>
+		
+			<th>User ID</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Username</th>
+			<th>Password</th>
+			<th>Team</th>
+			<th>Role Type</th>
+			<th>Email</th>
+			
+
+		</tr>
+	</thead>
+	<tbody>
+		
+		<td>{{userId}}</td>
+		<td>{{firstName}}</td>
+		<td>{{lastName}}</td>
+		<td>{{userName}}</td>
+		<td>{{password}}</td>
+		<td>{{teamId}}</td>
+		<td>{{roleType}}</td>
+		<td>{{email}}</td>
+
+	</tbody>
+</table>
+<br>
+
+<div *ngIf="showUpdate">
+<button type="button" (click)="updateInfo()" id="updateBtn" class="btn btn-primary" style="color: white;margin-left: 10px;">Update Profile</button>
+</div>
+	<div *ngIf="showTable" class="alert alert-success box-msg" role="alert">
+
+	Enter new First Name: <input [(ngModel)]="user.firstName" placeholder="name" /> <br>
+	Enter new Last Name: <input [(ngModel)]="user.lastName" placeholder="name" /> <br>
+	Enter new User Name: <input [(ngModel)]="user.userName" placeholder="name" /> <br>
+	Enter new Password: <input [(ngModel)]="user.password" placeholder="name" /> <br>
+	Enter new Email: <input [(ngModel)]="user.email" placeholder="name" /> <br>
+
+	<div *ngIf="showDone">
+	<button type="button" (click)="done()" id="doneBtn" class="btn btn-primary">Done</button>
+	</div>
+</div>
